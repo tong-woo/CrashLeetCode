@@ -1,11 +1,10 @@
-package com.example.leetcode.service.stack;
+package com.tong.leetcode.problem.stack;
 
-import java.util.*;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Stack;
 
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
-
-public class ValidParentheses20 {
+public class ValidParentheses {
     public boolean isValid(String s) {
         Map<Character, Character> map = new HashMap<Character, Character>();
         Stack<Character> stack = new Stack<Character>();
@@ -22,11 +21,4 @@ public class ValidParentheses20 {
         }
         return stack.size() == 1;
     }
-
-    @Test
-    void testStringWithExpectedOutput(){
-        String s = "()[]{}";
-        Assertions.assertTrue(isValid(s));
-    }
-
 }

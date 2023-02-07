@@ -1,4 +1,4 @@
-package com.example.leetcode;
+package com.tong.leetcode;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

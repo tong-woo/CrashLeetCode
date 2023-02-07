@@ -1,7 +1,4 @@
-package com.example.leetcode.service.stack;
-
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
+package com.tong.leetcode.problem.stack;
 
 import java.util.Stack;
 
@@ -32,8 +29,3 @@ public class EvaluateReversePolishNotation {
         return !("+".equals(token) || "-".equals(token) || "*".equals(token) || "/".equals(token));
     }
 }
-
-//    @Test
-//    void testEvalRpn(){
-//        Assertions.assertTrue();
-//    }

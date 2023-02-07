@@ -1,4 +1,4 @@
-package com.example.leetcode.service.stack;
+package com.tong.leetcode.problem.stack;
 
 import java.util.*;
 
@@ -17,9 +17,7 @@ class MinStack {
     private final Stack<Integer> minStack = new Stack<>();
     private final Stack<Integer> helperStack = new Stack<>();
 
-    public MinStack() {
-
-    }
+    public MinStack() {}
 
     public void push(int val) {
         this.minStack.push(val);
@@ -42,5 +40,3 @@ class MinStack {
         return this.helperStack.peek();
     }
 }
-
-
