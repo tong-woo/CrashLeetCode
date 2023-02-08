@@ -1,7 +1,5 @@
 package com.tong.leetcode.problem.heap;
 
-import lombok.AllArgsConstructor;
-
 import java.util.*;
 
 /**
@@ -11,7 +9,7 @@ import java.util.*;
  */
 public class RewardTopKStudents {
 
-    public List<Integer> topStudents(String[] positive_feedback, String[] negative_feedback, String[] report, int[] student_id, int k) {
+    public List<Integer> topStudents(String[] positive_feedback, String[] negative_feedback, String[] report, int[] student_Id, int k) {
 
         HashMap<String, Integer> positiveScoreMap = new HashMap<>(), negativeScoreMap = new HashMap<>();
         int count = 0;
@@ -24,8 +22,8 @@ public class RewardTopKStudents {
             negativeScoreMap.put(s, -1);
         }
 
-        PriorityQueue<IDScorePair> priorityQueue= new PriorityQueue<>((a, b) -> {
-            if (a.score == b.score) return a.id - b.id;
+        PriorityQueue<IdScorePair> priorityQueue= new PriorityQueue<>((a, b) -> {
+            if (a.score == b.score) return a.Id - b.Id;
             return b.score - a.score;
         });
 
@@ -36,24 +34,24 @@ public class RewardTopKStudents {
                 if (positiveScoreMap.containsKey(s)) score += positiveScoreMap.get(s);
                 if (negativeScoreMap.containsKey(s)) score += negativeScoreMap.get(s);
             }
-            priorityQueue.offer(new IDScorePair(student_id[count], score));
+            priorityQueue.offer(new IdScorePair(student_Id[count], score));
             count++;
         }
 
         List<Integer> result=new ArrayList<>();
         while(k>0){
-            result.add(Objects.requireNonNull(priorityQueue.poll()).id);
+            result.add(Objects.requireNonNull(priorityQueue.poll()).Id);
             k--;
         }
         return result;
     }
 
-    static class IDScorePair {
-        int id;
+    static class IdScorePair {
+        int Id;
         int score;
 
-        IDScorePair(int id, int score){
-            this.id = id;
+        IdScorePair(int Id, int score){
+            this.Id = Id;
             this.score = score;
         }
     }
