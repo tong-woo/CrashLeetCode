@@ -1,9 +1,10 @@
 package com.tong.leetcode.hash;
 
 import com.tong.leetcode.problem.hash.PerformingStringShifts;
-import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mock;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class PerformingStringShiftsTest {
 
@@ -17,7 +18,6 @@ public class PerformingStringShiftsTest {
         String s = "abcdefg";
         String res = "efgabcd";
 
-        Assertions.assertThat(performingStringShifts.stringShift(s, shift))
-                .isEqualTo(res);
+        assertEquals(performingStringShifts.stringShift(s, shift), res);
     }
 }
