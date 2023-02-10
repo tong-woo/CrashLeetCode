@@ -42,11 +42,4 @@ public class CountNumberOfNiceSubArrays {
         }
         return res;
     }
-
-    public static void main(String[] args){
-        int[] intArray = {1,1,2,1,1};
-        int k = 3;
-        int a = numberOfSubArrays(intArray, k);
-        System.out.print(a);
-    }
 }
