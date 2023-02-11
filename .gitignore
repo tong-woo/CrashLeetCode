@@ -4,6 +4,9 @@ target/
 !**/src/main/**/target/
 !**/src/test/**/target/
 
+### OA is not for sharing ###
+!**/src/main/java/com/tong/leetcode/problem/oa/
+
 ### STS ###
 .apt_generated
 .classpath
