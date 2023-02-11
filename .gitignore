@@ -5,7 +5,7 @@ target/
 !**/src/test/**/target/
 
 ### OA is not for sharing###
-oa/
+oa/*
 
 ### STS ###
 .apt_generated
