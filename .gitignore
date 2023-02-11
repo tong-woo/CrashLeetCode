@@ -4,9 +4,6 @@ target/
 !**/src/main/**/target/
 !**/src/test/**/target/
 
-### OA is not for sharing ###
-!**/src/main/java/com/tong/leetcode/problem/oa/
-
 ### STS ###
 .apt_generated
 .classpath
@@ -35,6 +32,9 @@ build/
 ### VS Code ###
 .vscode/
 
-# Ignore Mac DS_Store files
+### Ignore Mac DS_Store files ###
 .DS_Store
 **/.DS_Store
+
+### OA is not for Sharing ###
+/src/main/java/com/tong/leetcode/problem/oa/
