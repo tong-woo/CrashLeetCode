@@ -14,10 +14,10 @@ public class EvaluateReversePolishNotation {
                 int num1 = numStack.pop();
                 int num2 = numStack.pop();
                 switch (i) {
-                    case "+" -> res = num2 + num1;
-                    case "-" -> res = num2 - num1;
-                    case "*" -> res = num2 * num1;
-                    case "/" -> res = num2 / num1;
+                    case "+": res = num2 + num1;
+                    case "-": res = num2 - num1;
+                    case "*": res = num2 * num1;
+                    case "/": res = num2 / num1;
                 }
                 numStack.push(res);
             }
