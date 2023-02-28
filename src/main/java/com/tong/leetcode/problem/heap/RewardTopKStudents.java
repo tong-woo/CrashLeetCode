@@ -5,6 +5,7 @@ import java.util.*;
 /**
  * LeetCode 2512
  * Solve this by Heap(Priority Queue) and self-defined class
+ *
  * @link https://leetcode.com/problems/reward-top-k-students/description/
  */
 public class RewardTopKStudents {
@@ -22,7 +23,7 @@ public class RewardTopKStudents {
             negativeScoreMap.put(s, -1);
         }
 
-        PriorityQueue<IdScorePair> priorityQueue= new PriorityQueue<>((a, b) -> {
+        PriorityQueue<IdScorePair> priorityQueue = new PriorityQueue<>((a, b) -> {
             if (a.score == b.score) return a.Id - b.Id;
             return b.score - a.score;
         });
@@ -38,8 +39,8 @@ public class RewardTopKStudents {
             count++;
         }
 
-        List<Integer> result=new ArrayList<>();
-        while(k>0){
+        List<Integer> result = new ArrayList<>();
+        while (k > 0) {
             result.add(Objects.requireNonNull(priorityQueue.poll()).Id);
             k--;
         }
@@ -50,7 +51,7 @@ public class RewardTopKStudents {
         int Id;
         int score;
 
-        IdScorePair(int Id, int score){
+        IdScorePair(int Id, int score) {
             this.Id = Id;
             this.score = score;
         }

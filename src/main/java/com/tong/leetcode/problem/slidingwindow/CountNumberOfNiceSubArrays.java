@@ -4,7 +4,7 @@ package com.tong.leetcode.problem.slidingwindow;
  * Given an array of integers nums and an integer k.
  * A continuous subarray is called nice if there are k odd numbers on it.
  * Return the number of nice sub-arrays.
- *
+ * <p>
  * LeetCode 1248
  *
  * @link https://leetcode.cn/problems/count-number-of-nice-subarrays/

@@ -1,6 +1,6 @@
 package com.tong.leetcode.problem.stack;
 
-import java.util.*;
+import java.util.Stack;
 
 /**
  * LeetCode 155
@@ -10,6 +10,7 @@ import java.util.*;
  * obj.pop();
  * int param_3 = obj.top();
  * int param_4 = obj.getMin();
+ *
  * @link https://leetcode.cn/problems/min-stack/
  */
 class MinStack {
@@ -17,17 +18,18 @@ class MinStack {
     private final Stack<Integer> minStack = new Stack<>();
     private final Stack<Integer> helperStack = new Stack<>();
 
-    public MinStack() {}
+    public MinStack() {
+    }
 
     public void push(int val) {
         this.minStack.push(val);
-        if(helperStack.isEmpty() || helperStack.peek() >= minStack.peek()){
+        if (helperStack.isEmpty() || helperStack.peek() >= minStack.peek()) {
             helperStack.push(val);
         }
     }
 
     public void pop() {
-        if( minStack.pop().equals(helperStack.peek())){
+        if (minStack.pop().equals(helperStack.peek())) {
             helperStack.pop();
         }
     }
