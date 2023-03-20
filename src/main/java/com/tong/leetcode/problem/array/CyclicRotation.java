@@ -22,5 +22,4 @@ public class CyclicRotation {
         }
         return queue.stream().mapToInt(Integer::intValue).toArray();
     }
-
 }

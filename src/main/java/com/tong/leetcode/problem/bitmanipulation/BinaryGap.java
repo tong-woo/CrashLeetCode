@@ -3,6 +3,8 @@ package com.tong.leetcode.problem.bitmanipulation;
 /**
  * LeetCode 868
  * Bit manipulation with right movement
+ * Left move -> multiply 2
+ * right move -> divide 2
  *
  * @link https://leetcode.cn/problems/binary-gap/
  */
