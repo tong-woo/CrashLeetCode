@@ -3,6 +3,9 @@ package com.tong.leetcode.problem.hash;
 import java.util.HashSet;
 import java.util.Set;
 
+/**
+ * <a href="https://app.codility.com/programmers/lessons/4-counting_elements/missing_integer/">Missing Integer</a>
+ */
 public class MissingInteger {
     public int solution(int[] A) {
         // Implement your solution here
