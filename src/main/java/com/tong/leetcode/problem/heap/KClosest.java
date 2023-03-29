@@ -13,13 +13,13 @@ public class KClosest {
         PriorityQueue<int[]> pq = new PriorityQueue<>(new Comparator<int[]>() {
             @Override
             public int compare(int[] o1, int[] o2) {
-                return (int) (Math.pow(o1[0],2) + Math.pow(o1[1],2) - Math.pow(o2[0], 2) - Math.pow(o2[1], 2));
+                return (int) (Math.pow(o1[0], 2) + Math.pow(o1[1], 2) - Math.pow(o2[0], 2) - Math.pow(o2[1], 2));
             }
         });
-        for (int[] i:points){
+        for (int[] i : points) {
             pq.offer(i);
         }
-        for (int i=0;i<k;i++){
+        for (int i = 0; i < k; i++) {
             res[i] = pq.poll();
         }
         return res;
