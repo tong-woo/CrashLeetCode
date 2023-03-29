@@ -3,6 +3,10 @@ package com.tong.leetcode.problem.heap;
 import java.util.Comparator;
 import java.util.PriorityQueue;
 
+/**
+ * LeetCode 973
+ * <a href="https://leetcode.com/problems/k-closest-points-to-origin/">...</a>
+ */
 public class KClosest {
     public int[][] kClosest(int[][] points, int k) {
         int[][] res = new int[k][2];
