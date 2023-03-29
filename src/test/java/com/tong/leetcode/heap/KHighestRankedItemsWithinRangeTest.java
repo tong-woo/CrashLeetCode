@@ -1,11 +1,10 @@
 package com.tong.leetcode.heap;
 
 import com.tong.leetcode.problem.heap.KHighestRankedItemsWithinRange;
+import java.util.List;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mock;
-
-import java.util.List;
 
 public class KHighestRankedItemsWithinRangeTest {
 

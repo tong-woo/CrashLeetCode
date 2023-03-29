@@ -1,10 +1,10 @@
 package com.tong.leetcode.hash;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import com.tong.leetcode.problem.hash.PerformingStringShifts;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mock;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class PerformingStringShiftsTest {
 

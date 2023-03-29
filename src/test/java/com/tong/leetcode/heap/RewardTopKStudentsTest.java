@@ -1,12 +1,11 @@
 package com.tong.leetcode.heap;
 
 import com.tong.leetcode.problem.heap.RewardTopKStudents;
+import java.util.List;
+import java.util.stream.IntStream;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mock;
-
-import java.util.List;
-import java.util.stream.IntStream;
 
 public class RewardTopKStudentsTest {
 
