@@ -1,4 +1,4 @@
-package com.tong.leetcode.problem.search.binaryserach;
+package com.tong.leetcode.problem.binarysearch;
 
 import java.util.Arrays;
 

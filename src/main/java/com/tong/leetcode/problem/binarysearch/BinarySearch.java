@@ -1,4 +1,4 @@
-package com.tong.leetcode.problem.search.binaryserach;
+package com.tong.leetcode.problem.binarysearch;
 
 public class BinarySearch {
     public int search(int[] nums, int target) {
