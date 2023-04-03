@@ -4,7 +4,7 @@ public class RotatedSortedArray {
 
   public int findMin(int[] nums) {
     int maxRotateTime = nums.length;
-    int left = 1;
+    int left = 0;
     int right = maxRotateTime - 1;
     while (left < right) {
       int mid = left + (right - left) / 2;
